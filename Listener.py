@@ -43,9 +43,9 @@ class Websocket:
         return start_server
 
     @staticmethod
-    async def recv(websocket):
+    async def recv(websocket,path):
         return await websocket.recv()
 
     @staticmethod
-    async def send(websocket, data):
+    async def send(websocket,path, data):
         await websocket.send(data)
